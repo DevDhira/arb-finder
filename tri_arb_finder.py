@@ -69,7 +69,7 @@ def display_table(coins_data):
     df = pd.DataFrame(coins_data)
     
     # Sort by 'Price Difference (%)' in descending order and select top 10
-    df = df.sort_values(by='Price Difference (%)', ascending=False).head(10)
+    df = df.sort_values(by='Price Difference (%)', ascending=False).head(15)
 
     # Formatting for centering text
     print(f"{'Coin':^12} {'BTC Pair Price (USD)':^22} {'USDT Pair Price':^18} {'Price Difference (%)':^22} {'Potential Profit ($)':^22} {'Volume (USDT)':^18}")
